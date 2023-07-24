@@ -80,6 +80,31 @@
   }
 }
 
+
+/* CSS untuk tampilan folder */
+.folder {
+  margin-bottom: 2rem;
+}
+
+.folder h2 {
+  margin-top: 0;
+  background-color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.folder-content {
+  padding-left: 1rem;
+  display: none;
+}
+
+/* CSS untuk tampilan file */
+.file {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+
 .feature:hover {
   opacity: 0.8; /* Mengurangi opasitas saat kursor mengarah ke tautan */
   transform: scale(1.1); /* Memperbesar elemen saat kursor mengarah ke tautan */
