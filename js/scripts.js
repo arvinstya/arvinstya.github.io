@@ -1,7 +1,14 @@
-/*!
-* Start Bootstrap - Personal v1.0.1 (https://startbootstrap.com/template-overviews/personal)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-personal/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
+// JavaScript untuk menampilkan isinya saat folder diklik
+document.addEventListener('DOMContentLoaded', () => {
+  const folderElements = document.querySelectorAll('.folder');
+
+  folderElements.forEach((folder) => {
+    const folderContent = folder.querySelector('.folder-content');
+    const folderTitle = folder.querySelector('h2');
+
+    folderTitle.addEventListener('click', () => {
+      // Toggle tampilan konten folder (muncul/sembunyi)
+      folderContent.style.display = folderContent.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+});
